@@ -1,0 +1,53 @@
+<!-- <h2>Movie List</h2>
+<div>
+<input class="form-control" type="text" name="name"
+[(ngModel)]="name" (ngModelChange)="Search()" placeholder="Search Movie"></div>
+<div>
+<table id="movieListTable"class="table table-striped">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>MOVIE NAME</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let movie of movies">
+            <td>{{movie.id}}</td>
+            <td>{{movie.name}}</td>
+            <td><Button class="btn btn-success" routerLink="{{movie.name}}" >View Details</Button></td> -->
+            <!-- (click)="details(movie.id)" -->
+        <!-- </tr>
+    </tbody>
+</table>
+</div> -->
+<meta http-equiv="refresh">
+<h1 style="font-family: Century Gothic, sans-serif; text-align: center; font-size: 50px; margin-top: 25px; color: #0b3954;"><b>Movie List</b></h1>
+<div class="row">
+<div class="input-group mb-3">
+    
+    <input class="form-control col-3" type="text" name="name"
+    [(ngModel)]="name" (ngModelChange)="Search()" placeholder="Search Movie" style="font-family: Century Gothic, sans-serif; ">
+    <span class="input-group-text" style="background-color: #087e8b; "><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16" style="color: white;">
+        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+      </svg></span>
+</div>
+    </div>
+    <div>
+<div class="row">
+    <div class="col-sm" *ngFor="let movie of movies">
+<div class="card shadow p-3 mb-5 rounded" style="width: 18rem; height: 600px; margin-bottom: 25px; margin-top: 25px;">
+    <img class="card-img-top" src={{movie.poster}} alt="Card image cap" style="height: 250px;">
+    <div class="card-body d-flex flex-column ">
+      <h1 class="card-title" style="font-family: Century Gothic, sans-serif;"><b>{{movie.name}}</b></h1>
+      <p class="card-text" style="font-family: Century Gothic, sans-serif;">{{movie.description}}</p>
+      <div class="text-center mt-auto" style="margin-top: 25px;">
+        <Button class="btn align-self-end " routerLink="{{movie.name}}" style="margin-top: auto; font-family: Century Gothic, sans-serif;">Book Movie</Button></div>
+    </div>
+  </div>
+</div>
+</div>
+
+
+
+
+

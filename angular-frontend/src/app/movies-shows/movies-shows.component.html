@@ -1,0 +1,58 @@
+<h1 style="font-family: Century Gothic, sans-serif; text-align: center; font-size: 50px; margin-top: 25px; color: #0b3954;"><b>Shows & Theatres</b></h1>
+<!-- <div class="row">
+<div class="col-3 mt-3" *ngFor="let movie of movieShows">
+    <img src="{{movie.movie.poster}}" width="200px" height="300px"alt="error">
+</div>
+<div class="col-9 mt-3" *ngFor="let movie of movieShows">
+    <p><b>Description</b></p>
+    {{movie.movie.description}}
+    <div class="mt-3">
+        <p><b>Start Time: </b>{{movie.startTime}}</p>
+    </div>
+    <div>
+        <p><b>Theater name: </b>{{movie.theater.name}}</p>
+    </div>
+</div>
+</div>
+<select (change)="onDropdownChange($event)">
+    <option value="">Select seat type</option>
+    <option value="Basic" [selected]="selectedValue === 'Basic'">Basic</option>
+    <option value="Premium" [selected]="selectedValue === 'Premium'">Premium</option>
+
+
+  </select>
+
+  <div>
+    <Button class="btn btn-success" >Next</Button>
+</div> -->
+
+
+<!-- <div class="row">
+    <div class="col-sm" *ngFor="let movie of movieShows"> -->
+<div class="card shadow p-3 mb-5 rounded" *ngFor="let movie of movieShows"
+    style="width: auto; height: auto; margin-bottom: 25px; margin-top: 25px;">
+    <div class="row">
+        <div class="col-3">
+            <div class="card-body d-flex flex-column">
+                
+                <img src={{movie.movie.poster}} alt="Card image cap" style="height: 250px;">
+
+            </div>
+        </div>
+        <div class="col-9 mt-3">
+            <h1 class="card-title" style="font-family: Century Gothic, sans-serif;"><b>{{movie.movie.name}}</b></h1>
+
+            <p style="font-family: Century Gothic, sans-serif; font-size: 18px;"><b>Date: </b>{{movie.date}}</p>
+            <p style="font-family: Century Gothic, sans-serif; font-size: 18px;" ><b>Start Time: </b>{{movie.startTime}}</p>
+            
+            <p style="font-family: Century Gothic, sans-serif; font-size: 18px;"><b>Theatre name: </b>{{movie.theater.name}}</p>
+            <p style="font-family: Century Gothic, sans-serif; font-size: 18px;"><b>City: </b>{{movie.theater.city}}</p>
+        </div>
+            <div class="text-center mt-auto" style="margin-top: 25px;">
+                <Button class="btn align-self-end " style="margin-top: auto; font-family: Century Gothic, sans-serif;" (click)="routeTo(movie.id, movie.theater.name)">Book Movie</Button>
+            </div>
+        
+    </div>
+</div>
+<!-- </div>
+</div> -->

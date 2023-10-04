@@ -1,0 +1,51 @@
+@import "~bootstrap/dist/css/bootstrap.min.css";
+
+/* .footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 70px;
+    background-color: #0D6EFD;
+    text-align: center;
+    color: white;
+} */
+
+/* .example-spacer {
+    flex: 1 1 auto;
+  } */
+
+  .navbar{
+    color: #0b3954;
+    font-family: "Lucida Sans", sans-serif;
+  }
+ 
+
+  #navbar{
+    background:#087e8b;
+    color: #0b3954;
+  }
+
+  .main{
+    background-color:#c9d7de;
+  }
+
+  #sticky-footer
+  {
+    background:#087e8b;
+    color: #0b3954;
+
+  }
+
+  nav ul li a:hover {
+    color: #bfd7ea;
+  }
+
+
+nav ul li a {
+    color: #0b3954;
+  }
+
+
+  nav ul li a.active {
+    color: #bfd7ea;
+  }

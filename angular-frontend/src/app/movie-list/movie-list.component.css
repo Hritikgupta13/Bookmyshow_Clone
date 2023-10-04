@@ -1,0 +1,19 @@
+.ngx-pagination{
+    background: #0D6EFD
+}
+
+.card
+{
+    background-color: #c9e1e0;
+    color: #0b3954;
+}
+
+.btn
+{
+    background-color: #087e8b;
+}
+
+.form-control.placeholder
+{
+    color: #c9e1e0;
+}
